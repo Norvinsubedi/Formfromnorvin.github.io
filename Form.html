@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="" content="">
+  <title>Responsive Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .input-box {
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #33a5ff;
+      border-radius: 20px;
+      box-shadow: 0 0 10px #33a5ff;
+    }
+
+    .name {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .input-tezt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .input-tezt svg {
+      margin-right: 10px;
+      color: #33a5ff;
+      filter: drop-shadow(0 0 5px #33a5ff);
+    }
+
+    .input-tezt input {
+      background-color: transparent;
+      border: 2px solid #33a5ff;
+      border-radius: 10px;
+      color: #fff;
+      padding: 10px;
+      width: 200px;
+    }
+
+    .email {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .email i {
+      margin-right: 10px;
+      color: #33a5ff;
+      filter: drop-shadow(0 0 5px #33a5ff);
+    }
+
+    .email input {
+      background-color: transparent;
+      border: 2px solid #33a5ff;
+      border-radius: 10px;
+      color: #fff;
+      padding: 10px;
+      width: 200px;
+    }
+
+    .gender {
+      text-align: center;
+    }
+
+    .gender input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    #submit {
+      background-color: #33a5ff;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="input-box">
+    <div class="name">Registration Form</div>
+    <div class="input-tezt">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path
+          d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+      </svg>
+      <input type="text" name="Name" id="Name" value="" placeholder="First name" />
+    </div>
+
+    <div class="input-tezt">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path
+          d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+      </svg>
+      <input type="text" name="Name" id="Name" value="" placeholder="Last name" />
+    </div>
+
+    <div class="email">
+      <i class="fa-solid fa-envelope"></i>
+      <input type="email" name="dmail" id="dmail" placeholder="Email" />
+    </div>
+
+    <div class="gender">
+      <input type="radio" name="gender" id="gender" /> <label for="Male">Male</label>
+      <input type="radio" name="gender" id="gender" /> <label for="Female">Female</label>
+      <input type="radio" name="gender" id="gender" /> <label for="Other">Other</label>
+    </div>
+
+    <input type="submit" name="submit" id="submit" value="Submit" />
+  </div>
+</body>
+</html>
